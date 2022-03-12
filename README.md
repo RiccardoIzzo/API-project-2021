@@ -3,16 +3,16 @@ Final project for the "Algorithm and Principles of Computer Science" course at P
 Implementation in C of GraphRanker, a system to rank directed graphs based on the weight of their edges.
 
 ## Parameters and commands
-d: number of nodes  
-k: length of the ranking  
-AggiungiGrafo: add a graph to the ranking, it is followed by the adjacency matrix
+**`d`**: number of nodes  
+**`k`**: length of the ranking  
+**`AggiungiGrafo`**: add a graph to the ranking, it is followed by the adjacency matrix
 ```Text
 AggiungiGrafo
 3, 7, 42
 0, 7, 2
 7, 4, 3
 ```
-TokK: print the best k graphs which have the lowest value of the following metric, sum of the shortest paths between node 0 and all other nodes reachable from 0. If there are multiple graphs with the same value a FIFO policy is followed.  
+**`TopK`**: print the best k graphs which have the lowest value of the following metric, sum of the shortest paths between node 0 and all other nodes reachable from 0. If there are multiple graphs with the same value a FIFO policy is followed.  
 More details can be found on the specification.
 
 ## Execution example
@@ -34,6 +34,6 @@ TopK  // print 0 1 or 1 0
 ```
 
 ## Software & Tools used
-Clion  
-Valgrind  
-AddressSanitizer
+- Clion  
+- Valgrind  
+- AddressSanitizer
